@@ -1,0 +1,46 @@
+.hello{
+    @apply bg-teal-500;
+    height: 90vh;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../public/main-banner.png);
+}
+
+.main-text{
+    @apply text-5xl pt-36 pl-10 text-yellow-500;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    font-weight: 500;
+}
+
+.main-sub-text{
+    @apply text-2xl pl-24;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    font-weight: 500;
+    color: #4d4d4d; 
+}
+
+.navigation-text{
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    font-weight: 600;
+    color: #4d4d4d; 
+}
+
+.navigation-signin{
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    font-weight: 600;
+    
+}
+
+.mobile-app{
+    @apply pt-10 pl-10 shadow-slate-600;
+}
+
+.register-button{
+    @apply border-2 cursor-pointer px-4 py-1 mt-10 ml-52 w-60 rounded-full items-center navigation-signin text-white bg-black flex flex-row ;
+}
+
+.arrow{
+    @apply w-10 pl-12;
+    color: white;
+}
