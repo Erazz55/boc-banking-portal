@@ -44,3 +44,73 @@
     @apply w-10 pl-12;
     color: white;
 }
+
+.bill-paymet-wrapper{
+    @apply bg-gray-200 w-full;
+
+    &__card{
+        @apply flex bg-white flex-col h-max shadow-2xl rounded-2xl mx-5 mt-5;
+
+    .__title_wrapper{
+        @apply flex justify-items-center flex-col;
+        &__title{
+            @apply text-3xl pb-5 pl-96 pt-3;
+            font-family: "Fira Sans Extra Condensed", sans-serif;
+            font-weight: 600;
+            color: #4d4d4d; 
+        }
+        
+    }
+    .__break{
+        @apply w-full h-1 mb-3;
+        background-color: #4d4d4d;
+    }
+        
+    }
+
+}
+
+.subtitle{
+    @apply w-full md:w-full  rounded-t-lg mb-6 items-center flex justify-center ;
+    background-color: #4d4d4d;
+
+    h2 {
+        @apply text-xl py-2;
+        font-family: "Fira Sans Extra Condensed", sans-serif;
+        font-weight: 600;
+        color: white; 
+    }
+}
+
+.form_button{
+    @apply appearance-none block w-1/3 bg-emerald-600 text-gray-100 font-bold border border-gray-200 rounded-lg py-3 px-3 leading-tight hover:bg-emerald-400 focus:outline-none focus:bg-white focus:border-gray-500;
+}
+
+.option{
+    @apply rounded-2xl hover:bg-emerald-400 bg-slate-400;
+}
+
+.mobile_number_field{
+    @apply appearance-none block w-full bg-white text-gray-900 font-medium border border-gray-400 rounded-lg py-3 px-3 leading-tight focus:outline-none;
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+.bill-amount-text{
+    @apply pl-3;
+            font-family: "Fira Sans Extra Condensed", sans-serif;
+            font-weight: 600;
+            color: #4d4d4d; 
+    span{
+        font-family: "Fira Sans Extra Condensed", sans-serif;
+        font-weight: 600;
+        color: #ac1212; 
+    }
+}
+
+.side_navigation{
+    height: 120vh;
+}

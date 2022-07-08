@@ -1,19 +1,19 @@
 import { SideNavigation } from "../../components/cards/SideNavigation";
 import Navigation from "../../components/navigation/Navigation";
-import DashBoardWrapper from "../../layouts/dashboard/DashBoardWrapper";
+import BillPaymentWrapper from "../../layouts/bill_payments/BillPaymentWrapper";
 
-export interface DashboardProps {}
+export interface BillPaymentProps {}
 
-const Dashboard: React.FC<DashboardProps> = (props) => {
+const BillPayment: React.FC<BillPaymentProps> = (props) => {
   return (
     <>
       <Navigation />
       <div className="flex flex-row">
         <SideNavigation />
-        <DashBoardWrapper/>
+        <BillPaymentWrapper />
       </div>
     </>
   );
 };
 
-export default Dashboard;
+export default BillPayment;
