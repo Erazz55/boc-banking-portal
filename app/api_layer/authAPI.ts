@@ -5,7 +5,7 @@ import { LoginDTO } from '../models/LoginDTO';
 const BASE_API = "http://localhost:8080";
 
 export const tokens = {
-    token: "",
+    token: "" ,
     refresh: "",
 };
   
@@ -30,6 +30,7 @@ axios.interceptors.request.use(function (config: any) {
       .then((response) => {
         console.log(response, "*****response login*****");
         tokens.token = response.data.data.accessToken;
+        localStorage.setItem("token", response.data.data.accessToken);
         tokens.refresh = response.data.data.refreshToken;
         return response;
       })
