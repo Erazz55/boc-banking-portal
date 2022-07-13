@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { BillPaymentRequestDTO } from '../models/BillPaymentRequestDTO';
+import { CheckBillRequestDTO } from '../models/CheckBillRequestDTO';
 
 const BASE_API = "http://localhost:8080";
 
@@ -7,14 +8,14 @@ const BASE_API = "http://localhost:8080";
  * Check Bill API
  * params: mobile
  */
- export const checkBill = async (mobile: string) => {
-    console.log(mobile, "*****check bill request*****");
+ export const checkBill = async (data: CheckBillRequestDTO) => {
+    console.log(data, "*****check bill request*****");
     
     return await axios({
-      method: "GET",
+      method: "POST",
       baseURL: BASE_API,
-      url: `/bill-payment/${mobile}`,
-      data: {},
+      url: `/bill-payment/check-bill`,
+      data: data,
       headers: {
         "Authorization": `Bearer ${localStorage.getItem("token")}`,
       },

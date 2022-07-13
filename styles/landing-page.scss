@@ -99,8 +99,16 @@
     }
 }
 
+.bill-amount-text-title{
+    @apply pl-3 text-2xl pb-3 text-center;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    font-weight: 600;
+    color: #161313; 
+    
+}
+
 .bill-amount-text{
-    @apply pl-3;
+    @apply pl-3 pb-2;
             font-family: "Fira Sans Extra Condensed", sans-serif;
             font-weight: 600;
             color: #4d4d4d; 
@@ -112,5 +120,9 @@
 }
 
 .side_navigation{
-    height: 120vh;
+    height: 100vh;
+}
+
+.details_wrapper{
+    @apply pb-8;
 }
