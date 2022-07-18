@@ -97,8 +97,8 @@ export const CheckBillFormCard: React.FC<CheckBillFormCardProps> = (
                 <div>{(balance || bill) && ((balance !== "0.00") || (bill !== "0.00") ) ? 
                       <>
                         <h1 className="bill-amount-text-title">Details</h1>
-                        {balance ? <><h1 className="bill-amount-text"><span>Balance:</span> {`Rs. ${balance}`}</h1></> : ""}
-                        {bill ? <><h1 className="bill-amount-text"><span>Bill Amount:</span> {`Rs. ${bill}`}</h1></>: ""}
+                        {balance !== "0.00" ? <><h1 className="bill-amount-text"><span>Balance:</span> {`Rs. ${balance}`}</h1></> : ""}
+                        {bill !== "0.00" ? <><h1 className="bill-amount-text"><span>Bill Amount:</span> {`Rs. ${bill}`}</h1></>: ""}
                         <h1 className="bill-amount-text"><span>Package Type:</span> {`${type}`}</h1>
                       </> : ""}      
                 </div>
