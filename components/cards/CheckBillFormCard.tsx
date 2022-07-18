@@ -94,18 +94,14 @@ export const CheckBillFormCard: React.FC<CheckBillFormCardProps> = (
               </div>
               
               <div className="details_wrapper">
-                <div>{balance && balance !== "0.00" ? 
+                <div>{(balance || bill) && ((balance !== "0.00") || (bill !== "0.00") ) ? 
                       <>
                         <h1 className="bill-amount-text-title">Details</h1>
-                        <h1 className="bill-amount-text"><span>Balance:</span> {`Rs. ${balance}`}</h1>
+                        {balance ? <><h1 className="bill-amount-text"><span>Balance:</span> {`Rs. ${balance}`}</h1></> : ""}
+                        {bill ? <><h1 className="bill-amount-text"><span>Bill Amount:</span> {`Rs. ${bill}`}</h1></>: ""}
                         <h1 className="bill-amount-text"><span>Package Type:</span> {`${type}`}</h1>
-                      </> : ""}</div>
-                <div>{bill && bill !== "0.00" ? 
-                <>
-                  <h1 className="bill-amount-text-title">Details</h1>
-                  <h1 className="bill-amount-text"><span>Bill Amount:</span> {`Rs. ${bill}`}</h1>
-                  <h1 className="bill-amount-text"><span>Package Type:</span> {`${type}`}</h1>
-                </> : ""}</div>
+                      </> : ""}      
+                </div>
               </div>
             </form>
             

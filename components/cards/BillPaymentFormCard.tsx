@@ -56,9 +56,9 @@ export const BillPaymentFormCard: React.FC<BillPaymentFormCardProps> = (
                     className="block w-full bg-white text-gray-900 font-medium border border-gray-400 rounded-lg py-3 px-3 leading-tight focus:outline-none"
                   >
                      <option className="option" value="">Plase select a biller</option>
-                    <option className="option" value="GSMU003900">Dialog - Reload</option>
-                    <option className="option" value="GSMU004900">Dialog - Bill Payment</option>
+                    <option className="option" value="dialog">Dialog</option>
                     <option className="option" value="mobitel">Mobitel</option>
+                    <option className="option" value="etisalat">Etisalat</option>
                   </Field>
                 </div>
                 <div className="w-full md:w-full px-3 mb-6">
